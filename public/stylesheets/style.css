@@ -14,10 +14,38 @@
  *  JSStandard: http://standardjs.com/rules.html
  *
 */
+svg {
+  padding: 0;
+  margin: 0;
+  background: #000; }
+
+line {
+  stroke-width: 1;
+  stroke: #57B4FB;
+  stroke-opacity: .7; }
+
+#full-name {
+  font-family: 'Righteous', cursive;
+  text-transform: uppercase;
+  stroke-width: 1;
+  stroke: #fff;
+  fill: url("/#gradient-1");
+  font-size: 6em; }
+
+#title {
+  font-family: 'Righteous', cursive;
+  text-transform: uppercase;
+  stroke-width: 1;
+  stroke: #fff;
+  fill: url("/#gradient-1");
+  font-size: 2em; }
+
 .jumbotron {
-  background: #bddbf5;
-  color: #212123;
-  margin-bottom: 0; }
+  background: #57B4FB;
+  color: #141010;
+  margin: 0 0 20px 0;
+  padding: 0;
+  height: 400px; }
   .jumbotron h1 {
     color: #282d40;
     font-size: 4em;
@@ -45,11 +73,11 @@
   animation-name: slideInUp; }
 
 .page-header {
-  background-color: #212123;
+  background-color: #141010;
   margin-top: 0;
   padding: 100px 0; }
   .page-header h2 {
-    color: #bddbf5; }
+    color: #57B4FB; }
 
 .navbar-default .navbar-nav > li > a:link,
 .navbar-default .navbar-nav > li > a:active,
@@ -57,17 +85,17 @@
   color: #efefef; }
 
 .navbar-default .navbar-nav > li > a:hover {
-  color: #bddbf5; }
+  color: #57B4FB; }
 
 .navbar-default .navbar-nav > .active > a:link,
 .navbar-default .navbar-nav > .active > a:active,
 .navbar-default .navbar-nav > .active > a:visited {
   background: none;
-  color: #bddbf5; }
+  color: #57B4FB; }
 
 .navbar-default .navbar-nav > .active > a:hover {
   background: none;
-  color: #bddbf5; }
+  color: #57B4FB; }
 
 .navbar-default .navbar-toggle {
   border-color: #28282c; }
@@ -77,7 +105,7 @@
   background-color: #28282c; }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #bddbf5; }
+  background-color: #57B4FB; }
 
 .navbar {
   -webkit-border-radius: 0;
@@ -85,7 +113,7 @@
   -o-border-radius: 0;
   -ms-border-radius: 0;
   border-radius: 0;
-  background-color: #212123;
+  background-color: #141010;
   border-bottom: 1px #282d40 solid;
   margin-bottom: 0; }
   .navbar .navbar-nav {
@@ -113,7 +141,7 @@
   font-size: 5em; }
 
 a > .fa-4 {
-  color: #bddbf5; }
+  color: #57B4FB; }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .card {
