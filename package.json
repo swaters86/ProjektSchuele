@@ -13,5 +13,12 @@
     "jade": "~1.11.0",
     "morgan": "~1.7.0",
     "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "gulp-sass": "^2.3.2",
+    "standard": "^8.6.0"
+  },
+  "optionalDependencies": {
+    "bootstrap-sass": "^3.3.7"
   }
 }
