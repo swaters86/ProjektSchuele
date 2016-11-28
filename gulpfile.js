@@ -4,8 +4,6 @@ var gulp = require('gulp')
 
 var sass = require('gulp-sass')
 
-var fs = require('fs')
-
 gulp.task('sass', function () {
   return gulp.src('sass/**/*.scss')
     .pipe(sass.sync().on('error', sass.logError))
