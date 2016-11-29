@@ -8,7 +8,7 @@ router.get('/', function (req, res, next) {
     'skills':
     {
       'skillsSet1': ['HTML5', 'CSS3', 'Basic JavaScript (ES6)', 'Responsive Design', 'Bootstrap 3', 'Wordpress', 'Node.js', 'Express.js', 'SASS', 'Git', 'NPM', 'Jade', 'Java', 'C++', 'Visual Studio Code'],
-      'skillsSet2': ['HTML4', 'CSS2', 'Basic JavaScript (ES5)', 'Basic PHP', 'Basic C#', 'ASP.net', 'T-SQL Scripting', 'Application Support', 'Documentation', 'Presentations', 'SDLC', 'SEO', 'Graphic Design', 'Illustrator', 'Photoshop'],
+      'skillsSet2': ['HTML4', 'CSS2', 'jQuery', 'Basic JavaScript (ES5)', 'Basic PHP', 'Basic C#', 'ASP.net', 'T-SQL Scripting', 'Application Support', 'Documentation', 'Presentations', 'SDLC', 'SEO', 'Graphic Design', 'Illustrator', 'Photoshop'],
       'skillsSet3': ['ES6', 'React', 'Angular.js', 'Babel', 'Gulp', 'Web Pack', 'Web Assembly', 'CSS3 Animations', 'Filmmaking']
     },
     'codeItems': [
