@@ -112,7 +112,7 @@ line {
 .jumbotron {
   background: $light-1;
   color: $dark-1;
-  margin: 0 0 20px 0;
+  margin: 0;
   padding: 0;
   height: 400px;
 
@@ -255,8 +255,7 @@ line {
 
 }
 
-/* Social Media Icons */
-
+// Social Media Icons 
 .social-icons .icon {
   padding: 20px 0;
   text-align: center;
@@ -295,8 +294,7 @@ a > .fa-4 {
 }
 
 
-/* Helper Classes */
-
+// Helper Classes
 .make-fluid {
   width: 100%;
 }
@@ -325,9 +323,7 @@ a > .fa-4 {
 }
 
 
-/* Misc Typography */
-
-
+// Misc Typography
 p {
   font-size: 1.2em;
   line-height: 2;
@@ -341,8 +337,7 @@ p {
   line-height: 2.5em;
 }
 
-/* Other Misc Styles */
-
+// Other Misc Styles
 .link-container {
   padding-bottom: 20px;
   border-bottom: 2px $light-2 solid;

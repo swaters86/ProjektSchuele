@@ -43,7 +43,7 @@ line {
 .jumbotron {
   background: #57B4FB;
   color: #141010;
-  margin: 0 0 20px 0;
+  margin: 0;
   padding: 0;
   height: 400px; }
   .jumbotron h1 {
@@ -132,7 +132,6 @@ line {
     border-color: none;
     text-align: center; }
 
-/* Social Media Icons */
 .social-icons .icon {
   padding: 20px 0;
   text-align: center; }
@@ -157,7 +156,6 @@ a > .fa-4 {
   .page-header {
     padding: 50px 0; } }
 
-/* Helper Classes */
 .make-fluid {
   width: 100%; }
 
@@ -179,7 +177,6 @@ a > .fa-4 {
 .hypenate::after {
   content: ' - '; }
 
-/* Misc Typography */
 p {
   font-size: 1.2em;
   line-height: 2;
@@ -190,7 +187,6 @@ p {
   font-weight: bold;
   line-height: 2.5em; }
 
-/* Other Misc Styles */
 .link-container {
   padding-bottom: 20px;
   border-bottom: 2px #efefef solid; }
