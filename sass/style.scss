@@ -62,10 +62,13 @@
 
 
 @mixin box-shadow($offset-x, $offset-y, $blur-radius, $spread-radius, $color) {
-
   -moz-box-shadow:  $offset-x $offset-y $blur-radius $spread-radius $color;
   box-shadow:  $offset-x $offset-y $blur-radius $spread-radius $color;
+}
 
+@mixin text-shadow($offset-x, $offset-y, $blur-radius, $color) {
+  -moz-text-shadow:  $offset-x $offset-y $blur-radius $color;
+  text-shadow:  $offset-x $offset-y $blur-radius $color;
 }
 
 // Color Scheme (This should probably be done in the bootstrap variables sass file :)
@@ -76,7 +79,7 @@ $dark-3:  #666;
 $dark-4:  #28282c;
 $light-1: #57B4FB;
 $light-2: #efefef;
-$light-3: #f9f9f9;
+$light-3: #40222E;
 
 svg {
     padding: 0;
@@ -164,7 +167,6 @@ line {
   }
 
 
-
 //Page Headers for the main seperators
 .page-header {
 
@@ -175,7 +177,8 @@ line {
 
 
   h2 {
-    color: $light-1;
+    @include text-shadow(1px, 1px, 10px, $light-1);
+    color: $light-2;
   }
 
  }
@@ -224,7 +227,7 @@ line {
 .navbar {
   
   @include border-radius(0, all);
-  //@include box-shadow(0, 0, 20px, 5px, $light-1);
+  @include box-shadow(0, 0, 20px, 5px, $dark-2);
   //background: $dark-1 url('../../images/grid8.png') top left;
   background-color: $dark-1;
   border-bottom: 1px $dark-2 solid;

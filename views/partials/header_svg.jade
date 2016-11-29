@@ -8,10 +8,10 @@ svg(xmlns='http://www.w3.org/2000/svg',xmlns:xlink:='http://www.w3.org/1999/xlin
     rect(width='1',height='1',fill='url(#fade-gradient-1)')
   rect(width='100%',height='400',fill='#FF69B4',mask='url(#fade-1)')
   // ==== LOOK AT ALL THESE ELEMENTS! ====
- - var rows = 100;
- - var cols = 100;
- - for(i=1;i<2000;i++)
-  g
+ g
+  - var rows = 100;
+  - var cols = 100;
+  - for(i=1;i<2000;i++)
    line(x1='0',y1=i*rows,x2='100%',y2=i*rows)
    line(x1=i*cols,y1='100%',x2=i*cols,y2='0')
  g
@@ -50,5 +50,5 @@ svg(xmlns='http://www.w3.org/2000/svg',xmlns:xlink:='http://www.w3.org/1999/xlin
     stop(offset='60%',stop-color='#666')
     stop(offset='70%',stop-color='#FF69B4')
     stop(offset='100%',stop-color='#FFF')
-  text(id='full-name',class='animated fadeInDown', x='50%',y='200',text-anchor='middle',alignment-baseline='center') StevenWaters.com
-  text(id='title',class='animated fadeInDown',x='50%',y='250',text-anchor='middle',alignment-baseline='center',textLength='400') Now with more SVG
+  text(id='full-name',class='animated fadeInDown', x='50%',y='250',text-anchor='middle',alignment-baseline='center') Steven Waters
+  text(id='title',class='animated fadeInDown',x='50%',y='300',text-anchor='middle',alignment-baseline='center',textLength='400') Now with more SVG

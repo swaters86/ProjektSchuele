@@ -77,7 +77,9 @@ line {
   margin-top: 0;
   padding: 100px 0; }
   .page-header h2 {
-    color: #57B4FB; }
+    -moz-text-shadow: 1px 1px 10px #57B4FB;
+    text-shadow: 1px 1px 10px #57B4FB;
+    color: #efefef; }
 
 .navbar-default .navbar-nav > li > a:link,
 .navbar-default .navbar-nav > li > a:active,
@@ -113,6 +115,8 @@ line {
   -o-border-radius: 0;
   -ms-border-radius: 0;
   border-radius: 0;
+  -moz-box-shadow: 0 0 20px 5px #282d40;
+  box-shadow: 0 0 20px 5px #282d40;
   background-color: #141010;
   border-bottom: 1px #282d40 solid;
   margin-bottom: 0; }
