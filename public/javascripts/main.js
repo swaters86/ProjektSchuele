@@ -7,9 +7,9 @@ $(document).ready(function () {
     target: '.navbar'
   })
 
-  var windowHeight = $(window).height();
+  var windowHeight = $(window).height()
 
-  var windowWidth = $(window).width();
+  var windowWidth = $(window).width()
 
   /*
    If the viewport height is less than 1000px then the slide in animations are
@@ -39,10 +39,7 @@ $(document).ready(function () {
 
         codeItem.addClass('code-item')
       }
-
     })
   }
-;
-
-
+  ;
 })

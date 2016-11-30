@@ -6,46 +6,44 @@
  * Frameworks & Libraries: 
  *  Google Font API
  *	Normalize CSS: http://necolas.github.io/normalize.css
- * 	FontAwesome: http://fontawesome.io
  *  Bootstrap v3.3.7: http://getbootstrap.com 
- *  AngularJS v1.5.8: https://angularjs.org
  *  jQuery v3.1.0: http://jquery.com/download/
  *  GulpJS: http://gulpjs.com/
  *  JSStandard: http://standardjs.com/rules.html
  *
 */
 svg {
-  padding: 0;
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
 
 line {
-  stroke-width: 1;
-  stroke: #57B4FB;
-  stroke-opacity: .7; }
+  stroke: #57b4fb;
+  stroke-opacity: .7;
+  stroke-width: 1; }
 
-#full-name {
-  font-family: 'Righteous', cursive;
-  text-transform: uppercase;
-  stroke-width: 1;
-  stroke: #fff;
+.name {
   fill: url("/#gradient-1");
-  font-size: 6em; }
+  font-family: 'Righteous', cursive;
+  font-size: 6em;
+  stroke: #efefef;
+  stroke-width: 1;
+  text-transform: uppercase; }
 
-#title {
-  font-family: 'Righteous', cursive;
-  text-transform: uppercase;
-  stroke-width: 1;
-  stroke: #fff;
+.title {
   fill: url("/#gradient-1");
-  font-size: 2em; }
+  font-family: 'Righteous', cursive;
+  font-size: 2em;
+  stroke: #efefef;
+  stroke-width: 1;
+  text-transform: uppercase; }
 
 .jumbotron {
   background: #121212 url("../images/header.svg") no-repeat top center;
   background-size: cover;
   color: #121212;
+  height: 400px;
   margin: 0;
-  padding: 0;
-  height: 400px; }
+  padding: 0; }
   .jumbotron h1 {
     color: #282d40;
     font-size: 4em;
@@ -74,8 +72,8 @@ line {
   margin-top: 0;
   padding: 100px 0; }
   .page-header h2 {
-    -moz-text-shadow: 1px 1px 10px #57B4FB;
-    text-shadow: 1px 1px 10px #57B4FB;
+    -moz-text-shadow: 1px 1px 10px #57b4fb;
+    text-shadow: 1px 1px 10px #57b4fb;
     color: #efefef; }
 
 .navbar-default .navbar-nav > li > a:link,
@@ -84,17 +82,17 @@ line {
   color: #efefef; }
 
 .navbar-default .navbar-nav > li > a:hover {
-  color: #57B4FB; }
+  color: #57b4fb; }
 
 .navbar-default .navbar-nav > .active > a:link,
 .navbar-default .navbar-nav > .active > a:active,
 .navbar-default .navbar-nav > .active > a:visited {
   background: none;
-  color: #57B4FB; }
+  color: #57b4fb; }
 
 .navbar-default .navbar-nav > .active > a:hover {
   background: none;
-  color: #57B4FB; }
+  color: #57b4fb; }
 
 .navbar-default .navbar-toggle {
   border-color: #28282c; }
@@ -104,7 +102,7 @@ line {
   background-color: #28282c; }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #57B4FB; }
+  background-color: #57b4fb; }
 
 .navbar {
   -webkit-border-radius: 0;
@@ -141,7 +139,7 @@ line {
   font-size: 5em; }
 
 a > .fa-4 {
-  color: #57B4FB; }
+  color: #57b4fb; }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .card {
@@ -154,35 +152,16 @@ a > .fa-4 {
   .social-icons .icon:nth-child(4) {
     padding-left: 50px;
     text-align: left; }
-  #text {
-    transform: scale(0.5);
-    x: 100%; } }
-
-.make-fluid {
-  width: 100%; }
-
-.break-text {
-  display: block; }
-
-.word-wrap {
-  -ms-word-break: break-all;
-  overflow-wrap: break-word;
-  word-break: break-word;
-  word-wrap: break-word; }
-
-.hypenate {
-  font-style: normal; }
-
-.hypenate::before {
-  content: ' - '; }
-
-.hypenate::after {
-  content: ' - '; }
+  .name {
+    font-size: 2.8em; }
+  .title {
+    font-size: 1.8em; }
+  p {
+    font-size: 1.2em !important; } }
 
 p {
   font-size: 1.5em;
-  line-height: 2em;
-  padding: 10px 0; }
+  line-height: 2em; }
 
 .lead {
   color: #28282c;

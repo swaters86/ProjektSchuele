@@ -90,12 +90,6 @@ router.get('/', function (req, res, next) {
         'captionTitle': 'AlphaTerra',
         'captionText': 'Suspendisse commodo ac metus sed facilisis. In hac habitasse platea dictumst. Maecenas ullamcorper eget orci at dignissim. Praesent sit amet urna suscipit, aliquet erat eget, suscipit est. In libero quam, tempus dictum nisl eget, mattis sollicitudin ex. Vivamus mollis lobortis massa, nec vulputate nunc bibendum in. Donec non ligula convallis, pharetra leo eu, gravida urna. Nullam porta ipsum at orci commodo, eget ultricies turpis pretium.'
       }, {
-        'imgSrc': '../../images/portfolio_images/ICS.png',
-        'imgAlt': 'Screenshot of Interactive Contact Solutions former website.',
-        'url': 'http://interactivecontactsolutions.azurewebsites.net/',
-        'captionTitle': 'Interactive Contact Solutions',
-        'captionText': 'Suspendisse commodo ac metus sed facilisis. In hac habitasse platea dictumst. Maecenas ullamcorper eget orci at dignissim. Praesent sit amet urna suscipit, aliquet erat eget, suscipit est. In libero quam, tempus dictum nisl eget, mattis sollicitudin ex. Vivamus mollis lobortis massa, nec vulputate nunc bibendum in. Donec non ligula convallis, pharetra leo eu, gravida urna. Nullam porta ipsum at orci commodo, eget ultricies turpis pretium.'
-      }, {
         'imgSrc': '../../images/portfolio_images/DCS.png',
         'imgAlt': 'Screenshot of Diabetic Charitable Services former website',
         'url': 'http://diabeticservice.azurewebsites.net/',

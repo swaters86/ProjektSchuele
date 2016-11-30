@@ -6,9 +6,7 @@
  * Frameworks & Libraries: 
  *  Google Font API
  *	Normalize CSS: http://necolas.github.io/normalize.css
- * 	FontAwesome: http://fontawesome.io
  *  Bootstrap v3.3.7: http://getbootstrap.com 
- *  AngularJS v1.5.8: https://angularjs.org
  *  jQuery v3.1.0: http://jquery.com/download/
  *  GulpJS: http://gulpjs.com/
  *  JSStandard: http://standardjs.com/rules.html
@@ -60,7 +58,6 @@
 
 }
 
-
 @mixin box-shadow($offset-x, $offset-y, $blur-radius, $spread-radius, $color) {
   -moz-box-shadow:  $offset-x $offset-y $blur-radius $spread-radius $color;
   box-shadow:  $offset-x $offset-y $blur-radius $spread-radius $color;
@@ -71,43 +68,41 @@
   text-shadow:  $offset-x $offset-y $blur-radius $color;
 }
 
-// Color Scheme (This should probably be done in the bootstrap variables sass file :)
-
+// Color Scheme - This should probably be done in the bootstrap variables sass file :)
 $dark-1:  #121212;
 $dark-2:  #282d40;
 $dark-3:  #666;
 $dark-4:  #28282c;
-$light-1: #57B4FB;
+$light-1: #57b4fb;
 $light-2: #efefef;
 $light-3: #2B111E;
 
 svg {
-    padding: 0;
-    margin: 0;
+  margin: 0;
+  padding: 0;
 }
 
 line {
-    stroke-width: 1;
-    stroke: #57B4FB;
-    stroke-opacity: .7;
+  stroke: $light-1;
+  stroke-opacity: .7;
+  stroke-width: 1;
 }
 
-@mixin headline-style($fontSize) {
-    font-family: 'Righteous', cursive;
-    text-transform: uppercase;
-    stroke-width: 1;
-    stroke: #fff;
-    fill: url('/#gradient-1');
-    font-size: $fontSize;
+@mixin headline-style($font-size) {
+  fill: url('/#gradient-1');
+  font-family: 'Righteous', cursive;
+  font-size: $font-size;
+  stroke: $light-2;
+  stroke-width: 1;
+  text-transform: uppercase;
 }
 
-#full-name {
- @include headline-style(6em);
- 
+.name {
+  @include headline-style(6em);
 }
 
-#title {
- @include headline-style(2em);
+.title {
+  @include headline-style(2em);
 }
 
 // Jumbotron element
@@ -116,17 +111,15 @@ line {
   background: $dark-1 url('../images/header.svg') no-repeat top center;
   background-size: cover;
   color: $dark-1;
+  height: 400px;
   margin: 0;
   padding: 0;
-  height: 400px;
-
 
   h1 {
     color: $dark-2;
     font-size: 4em;
     font-weight: 600;
   }
-
 
  }
 
@@ -136,12 +129,14 @@ line {
   ul {
 
     padding:  0;
+
     li {
       border-bottom: 1px $light-2 solid;
       line-height: 2em;
       list-style-type: none;
       padding: 10px 0 10px 0;
     }
+    
     li:last-child {
       border: none; 
     }
@@ -286,43 +281,18 @@ a > .fa-4 {
     text-align: left;
  }
 
-   #text {
-    transform: scale(.5);
-    x: 100%;
+  .name {
+    font-size: 2.8em;
   }
 
-
-}
-
-
-
-
-// Helper Classes
-.make-fluid {
-  width: 100%;
-}
-
-.break-text {
-  display: block;
-}
-
-.word-wrap {
-  -ms-word-break: break-all;
-  overflow-wrap: break-word;
-  word-break: break-word;
-  word-wrap: break-word;
-}
-
-.hypenate {
-  font-style: normal;
-}
-
-.hypenate::before {
-    content: ' - ';
+  .title {
+    font-size: 1.8em;
   }
 
-.hypenate::after {
-    content: ' - ';
+  p {
+    font-size: 1.2em !important;
+  }
+
 }
 
 
@@ -330,7 +300,6 @@ a > .fa-4 {
 p {
   font-size: 1.5em;
   line-height: 2em;
-  padding: 10px 0;
 }
 
 
