@@ -16,8 +16,7 @@
 */
 svg {
   padding: 0;
-  margin: 0;
-  background: #000; }
+  margin: 0; }
 
 line {
   stroke-width: 1;
@@ -41,8 +40,9 @@ line {
   font-size: 2em; }
 
 .jumbotron {
-  background: #57B4FB;
-  color: #141010;
+  background: #121212 url("../images/header.svg") no-repeat top center;
+  background-size: cover;
+  color: #121212;
   margin: 0;
   padding: 0;
   height: 400px; }
@@ -50,18 +50,15 @@ line {
     color: #282d40;
     font-size: 4em;
     font-weight: 600; }
-  .jumbotron .inner-header {
-    position: relative;
-    top: 20px; }
 
-.panel .skills {
+.panel ul {
   padding: 0; }
-  .panel .skills li {
+  .panel ul li {
     border-bottom: 1px #efefef solid;
     line-height: 2em;
     list-style-type: none;
-    padding: 10px 0 10px 10px; }
-  .panel .skills li:last-child {
+    padding: 10px 0 10px 0; }
+  .panel ul li:last-child {
     border: none; }
 
 .portfolio-item, .code-item {
@@ -73,7 +70,7 @@ line {
   animation-name: slideInUp; }
 
 .page-header {
-  background-color: #141010;
+  background-color: #121212;
   margin-top: 0;
   padding: 100px 0; }
   .page-header h2 {
@@ -117,7 +114,7 @@ line {
   border-radius: 0;
   -moz-box-shadow: 0 0 20px 5px #282d40;
   box-shadow: 0 0 20px 5px #282d40;
-  background-color: #141010;
+  background-color: #121212;
   border-bottom: 1px #282d40 solid;
   margin-bottom: 0; }
   .navbar .navbar-nav {
@@ -157,8 +154,9 @@ a > .fa-4 {
   .social-icons .icon:nth-child(4) {
     padding-left: 50px;
     text-align: left; }
-  .page-header {
-    padding: 50px 0; } }
+  #text {
+    transform: scale(0.5);
+    x: 100%; } }
 
 .make-fluid {
   width: 100%; }

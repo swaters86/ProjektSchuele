@@ -73,18 +73,17 @@
 
 // Color Scheme (This should probably be done in the bootstrap variables sass file :)
 
-$dark-1:  #141010;
+$dark-1:  #121212;
 $dark-2:  #282d40;
 $dark-3:  #666;
 $dark-4:  #28282c;
 $light-1: #57B4FB;
 $light-2: #efefef;
-$light-3: #40222E;
+$light-3: #2B111E;
 
 svg {
     padding: 0;
     margin: 0;
-    background: #000;
 }
 
 line {
@@ -113,11 +112,14 @@ line {
 
 // Jumbotron element
 .jumbotron {
-  background: $light-1;
+  // background: $dark-1;
+  background: $dark-1 url('../images/header.svg') no-repeat top center;
+  background-size: cover;
   color: $dark-1;
   margin: 0;
   padding: 0;
   height: 400px;
+
 
   h1 {
     color: $dark-2;
@@ -125,27 +127,21 @@ line {
     font-weight: 600;
   }
 
-  .inner-header {
-    position: relative;
-    top: 20px;
-  }
 
  }
 
 // Card element (used in the Portfolio and Skills section)
 .panel {
 
-  .skills {
+  ul {
 
     padding:  0;
-  
     li {
       border-bottom: 1px $light-2 solid;
       line-height: 2em;
       list-style-type: none;
-      padding: 10px 0 10px 10px;
+      padding: 10px 0 10px 0;
     }
-    
     li:last-child {
       border: none; 
     }
@@ -290,11 +286,15 @@ a > .fa-4 {
     text-align: left;
  }
 
- .page-header {
-    padding: 50px 0;
- }
+   #text {
+    transform: scale(.5);
+    x: 100%;
+  }
+
 
 }
+
+
 
 
 // Helper Classes
