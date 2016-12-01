@@ -21,25 +21,35 @@ $(document).ready(function () {
 
     var codeItem = $('.code').find('.panel')
 
+    var skillItem = $('.skills').find('.panel')
+
     portfolioItem.css('visibility', 'hidden')
 
     codeItem.css('visibility', 'hidden')
 
+    skillItem.css('visibility', 'hidden')
+
+    // Makes Elements visible a based how the user is at in the page or navigation item they click on
     $('.navbar li').on('activate.bs.scrollspy', function () {
       var activeNavLink = $(this).find('a')
 
       if (activeNavLink.attr('href') === '#portfolio') {
-        portfolioItem.css('visibility', 'visible')
-
-        portfolioItem.addClass('portfolio-item')
+        portfolioItem.css('visibility', 'visible').addClass('portfolio-item')
       }
 
       if (activeNavLink.attr('href') === '#code') {
-        codeItem.css('visibility', 'visible')
+        codeItem.css('visibility', 'visible').addClass('code-item')
+      }
 
-        codeItem.addClass('code-item')
+      if (activeNavLink.attr('href') === '#skills') {
+        skillItem.css('visibility', 'visible').delay(500).addClass('skill-item')
       }
     })
   }
-  ;
+
+  // Bumps up the text in the banner image by 50 pixels so it will look right on mobile devices.
+  if (windowWidth <= 768) {
+    $('.name').attr('y', '200')
+    $('.title').attr('y', '250')
+  }
 })

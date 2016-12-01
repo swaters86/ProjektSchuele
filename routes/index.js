@@ -7,8 +7,8 @@ router.get('/', function (req, res, next) {
     'siteTitle': 'StevenWaters.com - The homepage of Steven Waters, a web developer living in Tampa, Fl',
     'skills':
     {
-      'skillsSet1': ['HTML5', 'CSS3', 'Basic JavaScript (ES6)', 'Responsive Design', 'Bootstrap 3', 'Wordpress', 'Node.js', 'Express.js', 'SASS', 'Git', 'NPM', 'Jade', 'Java', 'C++', 'Visual Studio Code'],
-      'skillsSet2': ['HTML4', 'CSS2', 'jQuery', 'Basic JavaScript (ES5)', 'Basic PHP', 'Basic C#', 'ASP.net', 'T-SQL Scripting', 'Application Support', 'Documentation', 'Presentations', 'SDLC', 'SEO', 'Graphic Design', 'Illustrator', 'Photoshop'],
+      'skillsSet1': ['HTML5', 'CSS3', 'JavaScript (ES6)', 'Responsive Design', 'Bootstrap 3', 'Wordpress', 'Node.js', 'Express.js', 'SASS', 'Git', 'NPM', 'Jade', 'Java', 'C++', 'C#', 'Visual Studio Code'],
+      'skillsSet2': ['HTML4', 'CSS2', 'jQuery', 'JavaScript (ES5)', 'PHP5', 'ASP.net', 'T-SQL Scripting', 'Application Support', 'Documentation', 'Presentations', 'SDLC', 'SEO', 'Graphic Design', 'Illustrator', 'Photoshop'],
       'skillsSet3': ['ES6', 'React', 'Angular.js', 'Vue.js', 'Babel', 'Gulp', 'Web Pack', 'Web Assembly', 'CSS3 Animations', 'Filmmaking']
     },
     'codeItems': [

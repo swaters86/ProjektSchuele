@@ -7,6 +7,7 @@
  *  Google Font API
  *	Normalize CSS: http://necolas.github.io/normalize.css
  *  Bootstrap v3.3.7: http://getbootstrap.com 
+ *  Font Awesome: http://fontawesome.io/
  *  jQuery v3.1.0: http://jquery.com/download/
  *  GulpJS: http://gulpjs.com/
  *  JSStandard: http://standardjs.com/rules.html
@@ -68,26 +69,6 @@
   text-shadow:  $offset-x $offset-y $blur-radius $color;
 }
 
-// Color Scheme - This should probably be done in the bootstrap variables sass file :)
-$dark-1:  #121212;
-$dark-2:  #282d40;
-$dark-3:  #666;
-$dark-4:  #28282c;
-$light-1: #57b4fb;
-$light-2: #efefef;
-$light-3: #2B111E;
-
-svg {
-  margin: 0;
-  padding: 0;
-}
-
-line {
-  stroke: $light-1;
-  stroke-opacity: .7;
-  stroke-width: 1;
-}
-
 @mixin headline-style($font-size) {
   fill: url('/#gradient-1');
   font-family: 'Righteous', cursive;
@@ -97,15 +78,17 @@ line {
   text-transform: uppercase;
 }
 
-.name {
-  @include headline-style(6em);
-}
+// Color Scheme - This should probably be done in the bootstrap variables sass file :)
+$dark-1:  #121212;
+$dark-2:  #282d40;
+$dark-3:  #666;
+$dark-4:  #28282c;
+$light-1: #57b4fb;
+$light-2: #efefef;
+$light-3: #2B111E;
 
-.title {
-  @include headline-style(2em);
-}
 
-// Jumbotron element
+// Jumbotron Element
 .jumbotron {
   // background: $dark-1;
   background: $dark-1 url('../images/header.svg') no-repeat top center;
@@ -123,6 +106,21 @@ line {
 
  }
 
+// SVG Banner Elements
+svg {
+  margin: 0;
+  padding: 0;
+}
+
+.name {
+  @include headline-style(6em);
+}
+
+.title {
+  @include headline-style(2em);
+}
+
+
 // Card element (used in the Portfolio and Skills section)
 .panel {
 
@@ -137,26 +135,21 @@ line {
       padding: 10px 0 10px 0;
     }
     
-    li:last-child {
-      border: none; 
+    :last-child {
+      border: 0;
     }
 
   }
 
 }
 
-// These classes are added the columns in the Card element via JS for the portfolio and code sections
-
-  .portfolio-item, .code-item {
-    animation-duration: 1s;
-    animation-name: slideInDown;
-  }
-
-  .skill-item {
-    animation-duration: 1s;
-    animation-name: slideInUp;
-  }
-
+// These classes are added to elements in the skills, code, and work sections
+.portfolio-item,
+.code-item,
+.skill-item {
+  animation-duration: 1s;
+  animation-name: fadeIn;
+}
 
 //Page Headers for the main seperators
 .page-header {
@@ -174,49 +167,49 @@ line {
 
  }
 
-// Lots and lots of styles for the navigation menu!
-.navbar-default {
-  // Normal State
-  .navbar-nav > li > a:link,
-  .navbar-nav > li > a:active,
-  .navbar-nav > li > a:visited {
-    color: $light-2;
-  }
 
-  .navbar-nav > li > a:hover {
-    color: $light-1;
-  }
+// Navigation Elements
+.navbar-default {
+
+  .navbar-nav > {
+    li > a {
+      &:link,
+      &:active,
+      &:visited {
+        color: $light-2;
+      }
+      &:hover {
+        color: $light-1;
+      }
+    }
 
   // Active state */
-  .navbar-nav > .active > a:link, 
-  .navbar-nav > .active > a:active,
-  .navbar-nav > .active > a:visited {
-    background: none;
-    color: $light-1;
+    .active > a {
+      &:link,
+      &:active,
+      &:visited,
+      &:hover {
+        background: none;
+        color: $light-1;
+    }
   }
-
-  .navbar-nav > .active > a:hover {
-    background: none;
-    color: $light-1;
-  }
+}
 
   .navbar-toggle {
     border-color: $dark-4;
-  }
 
-  .navbar-toggle:hover,
-  .navbar-toggle:focus {
-    background-color: $dark-4;
+    &:hover,
+    &:focus {
+      background-color: $dark-4;
+    }
+    
+    .icon-bar {
+      background-color: $light-1;
+    }
   }
-
-  .navbar-toggle .icon-bar {
-    background-color: $light-1;
-  }
-
 }
 
 .navbar {
-  
   @include border-radius(0, all);
   @include box-shadow(0, 0, 20px, 5px, $dark-2);
   //background: $dark-1 url('../../images/grid8.png') top left;
@@ -224,35 +217,38 @@ line {
   border-bottom: 1px $dark-2 solid;
   margin-bottom: 0;
 
-
- .navbar-nav {
+  .navbar-nav {
     display: inline-block;
     float: none;
     vertical-align: top;
- }
+    
 
- .navbar-nav a:link,
- .navbar-nav a:active,
- .navbar .navbar-nav a:visited {
-    color: $light-2;
-    font-size: 1.2em;
-    font-weight: bold;
-    text-transform: uppercase;
- }
+    a {
+      &:link,
+      &:active,
+      &:visited {
+        color: $light-2;
+        font-size: 1.2em;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      }
+    }
 
- .navbar-collapse {
+  .navbar-collapse {
     border: 0;
     border-color: none;
     text-align: center;
- }
-
-
+  }
 }
 
+
 // Social Media Icons 
-.social-icons .icon {
-  padding: 20px 0;
-  text-align: center;
+.social-icons {
+  .icon {
+    padding: 20px 0;
+    text-align: center;
+ }
 }
 
 .fa-4 {
@@ -262,39 +258,6 @@ line {
 a > .fa-4 {
   color: $light-1;
 }
-
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-
-  .card {
-    padding: 0 10px;
-  }
-
-  .social-icons .icon:nth-child(1),
-  .social-icons .icon:nth-child(3) {
-    padding-right: 50px;
-    text-align: right;
- }
-
-  .social-icons .icon:nth-child(2),
-  .social-icons .icon:nth-child(4) {
-    padding-left: 50px;
-    text-align: left;
- }
-
-  .name {
-    font-size: 2.8em;
-  }
-
-  .title {
-    font-size: 1.8em;
-  }
-
-  p {
-    font-size: 1.2em !important;
-  }
-
-}
-
 
 // Misc Typography
 p {
@@ -318,3 +281,43 @@ p {
 .bg-warning {
   padding: 10px;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+  .page-header {
+    padding: 50px 0;
+  }
+
+  .card {
+    padding: 0 10px;
+  }
+
+  .social-icons {
+    .icon {
+      :nth-child(1),
+      :nth-child(3) {
+        text-align: right;
+      }
+
+      :nth-child(2),
+      :nth-child(4) {
+        text-align: left;
+      }
+    }
+  }
+
+  .name {
+    font-size: 2.8em;
+  }
+
+  .title {
+    font-size: 1.8em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+}
+
+
