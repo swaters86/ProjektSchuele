@@ -1,4 +1,9 @@
 $(document).ready(function () {
+
+  $('.navbar li a').click(function(){
+    $('.collapse').collapse('hide')
+  })
+
   /*
    plugin: ScrollSpy - This plugin highlights linked based on
    which section you are on in a page
