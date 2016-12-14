@@ -56,6 +56,7 @@ router.get('/', function (req, res, next) {
       }
     ],
     'portfolioItems': [
+      /*
       {
         'imgSrc': '../../images/portfolio_images/NCS_Portal.png',
         'imgAlt': 'A screenshot NEWSCYCLE Digital Salesforce Portal',
@@ -63,6 +64,7 @@ router.get('/', function (req, res, next) {
         'url': 'http://swaters86.github.io/portfolio/NCSPortal/index.html',
         'captionText': 'Suspendisse commodo ac metus sed facilisis. In hac habitasse platea dictumst. Maecenas ullamcorper eget orci at dignissim. Praesent sit amet urna suscipit, aliquet erat eget, suscipit est. In libero quam, tempus dictum nisl eget, mattis sollicitudin ex. Vivamus mollis lobortis massa, nec vulputate nunc bibendum in. Donec non ligula convallis, pharetra leo eu, gravida urna. Nullam porta ipsum at orci commodo, eget ultricies turpis pretium.'
       },
+      */
       {
         'imgSrc': '../../images/portfolio_images/Inline_Style_Printer.png',
         'imgAlt': 'A screenshot of a Node.js app that prints out incline styles that have been applied to elements on a page',
