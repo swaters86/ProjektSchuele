@@ -2,16 +2,16 @@ div(id='portfolio',class='container-fluid')
  div(class='row')
   div(class='page-header')
    h2(class='text-center text-uppercase') Latest Work
-div(class='container',ng-controller='portfolioCTRL')
+div(class='container')
  div(class='row portfolio')
   for portfolioItem in portfolioItems
    div(class='col-md-6')   
-    div(class="panel panel-default")
-     div(class="panel-body")
-      a(href='#{portfolioItem.url}',class='thumbnail align-left')
+    div(class='panel panel-default')
+     div(class='panel-body')
+      div(class='thumbnail')
        img(src='#{portfolioItem.imgSrc}',alt='#{portfolioItem.imgAlt}')
      div(class="panel-heading")
-      h3(class='text-center')
+      h4(class='text-center')
        a(href='#{portfolioItem.url}',title='visit site') #{portfolioItem.captionTitle}
  
           

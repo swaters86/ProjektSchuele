@@ -1,6 +1,6 @@
 {
   "name": "projektschuele",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
@@ -13,7 +13,8 @@
     "gulp-sass": "^2.3.2",
     "jade": "~1.11.0",
     "morgan": "~1.7.0",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.3.0",
+    "bootstrap-sass": "^3.3.7"
   },
   "devDependencies": {
     "gulp-pug-lint": "^0.1.6",
@@ -22,5 +23,26 @@
   },
   "optionalDependencies": {
     "bootstrap-sass": "^3.3.7"
-  }
+  },
+  "description": "Personal website for Steven Waters",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swaters86/ProjektSchuele.git"
+  },
+  "keywords": [
+    "personal",
+    "retro",
+    "80s",
+    "scrollspy",
+    "bootstrap",
+    "jade",
+    "node.js"
+  ],
+  "author": "Steven Schuele Waters <swaters@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swaters86/ProjektSchuele/issues"
+  },
+  "homepage": "https://github.com/swaters86/ProjektSchuele#readme"
 }

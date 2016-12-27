@@ -67,36 +67,31 @@ router.get('/', function (req, res, next) {
       */
       {
         'imgSrc': '../../images/portfolio_images/Inline_Style_Printer.png',
-        'imgAlt': 'A screenshot of a Node.js app that prints out incline styles that have been applied to elements on a page',
+        'imgAlt': 'A screenshot of a Node.js app that can print out inline CSS styles for elements on a page',
         'url': 'http://inlinestyleprinter.azurewebsites.net/',
-        'captionTitle': 'Inline Style Printer App',
-        'captionText': 'Suspendisse commodo ac metus sed facilisis. In hac habitasse platea dictumst. Maecenas ullamcorper eget orci at dignissim. Praesent sit amet urna suscipit, aliquet erat eget, suscipit est. In libero quam, tempus dictum nisl eget, mattis sollicitudin ex. Vivamus mollis lobortis massa, nec vulputate nunc bibendum in. Donec non ligula convallis, pharetra leo eu, gravida urna. Nullam porta ipsum at orci commodo, eget ultricies turpis pretium.'
+        'captionTitle': 'Inline Style Printer App'
 
       },
       {
         'imgSrc': '../../images/portfolio_images/Bespoke%26Co.png',
         'imgAlt': 'A screenshot of Bespoke & Co"s website from about 4 years ago',
         'url': 'http://bespokeandcofl.azurewebsites.net/',
-        'captionTitle': 'Bespoke & Co',
-        'captionText': 'Suspendisse commodo ac metus sed facilisis. In hac habitasse platea dictumst. Maecenas ullamcorper eget orci at dignissim. Praesent sit amet urna suscipit, aliquet erat eget, suscipit est. In libero quam, tempus dictum nisl eget, mattis sollicitudin ex. Vivamus mollis lobortis massa, nec vulputate nunc bibendum in. Donec non ligula convallis, pharetra leo eu, gravida urna. Nullam porta ipsum at orci commodo, eget ultricies turpis pretium.'
+        'captionTitle': 'Bespoke & Co'
       }, {
         'imgSrc': '../../images/portfolio_images/WoodlandWonders.png',
-        'imgAlt': 'Screenshot of WoodlandWonders.org website - Woodland Wonders is non-profit organization for rehabilating injured and orphaned wildlife.',
+        'imgAlt': 'Screenshot of WoodlandWonders.org - A non-profit organization for rehabilitating wildlife.',
         'url': 'http://woodlandwonders.org/',
-        'captionTitle': 'Woodland Wonders',
-        'captionText': 'Suspendisse commodo ac metus sed facilisis. In hac habitasse platea dictumst. Maecenas ullamcorper eget orci at dignissim. Praesent sit amet urna suscipit, aliquet erat eget, suscipit est. In libero quam, tempus dictum nisl eget, mattis sollicitudin ex. Vivamus mollis lobortis massa, nec vulputate nunc bibendum in. Donec non ligula convallis, pharetra leo eu, gravida urna. Nullam porta ipsum at orci commodo, eget ultricies turpis pretium.'
+        'captionTitle': 'Woodland Wonders'
       }, {
         'imgSrc': '../../images/portfolio_images/AlphaTerra.png',
         'imgAlt': 'Screenshot of AlphaTerra"s former website',
         'url': 'http://alphaterra.azurewebsites.net/',
-        'captionTitle': 'AlphaTerra',
-        'captionText': 'Suspendisse commodo ac metus sed facilisis. In hac habitasse platea dictumst. Maecenas ullamcorper eget orci at dignissim. Praesent sit amet urna suscipit, aliquet erat eget, suscipit est. In libero quam, tempus dictum nisl eget, mattis sollicitudin ex. Vivamus mollis lobortis massa, nec vulputate nunc bibendum in. Donec non ligula convallis, pharetra leo eu, gravida urna. Nullam porta ipsum at orci commodo, eget ultricies turpis pretium.'
+        'captionTitle': 'AlphaTerra'
       }, {
         'imgSrc': '../../images/portfolio_images/DCS.png',
         'imgAlt': 'Screenshot of Diabetic Charitable Services former website',
         'url': 'http://diabeticservice.azurewebsites.net/',
-        'captionTitle': 'Diabetic Charitable Services',
-        'captionText': 'Suspendisse commodo ac metus sed facilisis. In hac habitasse platea dictumst. Maecenas ullamcorper eget orci at dignissim. Praesent sit amet urna suscipit, aliquet erat eget, suscipit est. In libero quam, tempus dictum nisl eget, mattis sollicitudin ex. Vivamus mollis lobortis massa, nec vulputate nunc bibendum in. Donec non ligula convallis, pharetra leo eu, gravida urna. Nullam porta ipsum at orci commodo, eget ultricies turpis pretium.'
+        'captionTitle': 'Diabetic Charitable Services'
       }
     ]
 
