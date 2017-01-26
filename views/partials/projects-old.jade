@@ -1,19 +1,16 @@
 div(id='portfolio',class='container-fluid')
  div(class='row')
   div(class='page-header')
-   h2(class='text-center text-uppercase') Latest Work
+   h2(class='text-center text-uppercase') Older Work
 div(class='container')
  div(class='row portfolio')
-  for portfolioItem in portfolioItems
+  for portfolioOldItem in portfolioOldItems
    div(class='col-md-6')   
     div(class='panel panel-default')
      div(class='panel-body')
       div(class='thumbnail')
-       img(src='#{portfolioItem.imgSrc}',alt='#{portfolioItem.imgAlt}')
+       img(src='#{portfolioOldItem.imgSrc}',alt='#{portfolioOldItem.imgAlt}')
      div(class="panel-heading")
       h4(class='text-center')
-       a(href='#{portfolioItem.url}',title='visit site') #{portfolioItem.captionTitle}
+       a(href='#{portfolioOldItem.url}',title='visit site') #{portfolioOldItem.captionTitle}
        
- 
-          
- 

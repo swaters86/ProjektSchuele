@@ -56,21 +56,39 @@ router.get('/', function (req, res, next) {
       }
     ],
     'portfolioItems': [
-      /*
-      {
-        'imgSrc': '../../images/portfolio_images/NCS_Portal.png',
-        'imgAlt': 'A screenshot NEWSCYCLE Digital Salesforce Portal',
-        'captionTitle': 'NEWSCYCLE Digital Salesforce Portal',
-        'url': 'http://swaters86.github.io/portfolio/NCSPortal/index.html',
-        'captionText': 'Suspendisse commodo ac metus sed facilisis. In hac habitasse platea dictumst. Maecenas ullamcorper eget orci at dignissim. Praesent sit amet urna suscipit, aliquet erat eget, suscipit est. In libero quam, tempus dictum nisl eget, mattis sollicitudin ex. Vivamus mollis lobortis massa, nec vulputate nunc bibendum in. Donec non ligula convallis, pharetra leo eu, gravida urna. Nullam porta ipsum at orci commodo, eget ultricies turpis pretium.'
-      },
-      */
       {
         'imgSrc': '../../images/portfolio_images/Inline_Style_Printer.png',
         'imgAlt': 'A screenshot of a Node.js app that can print out inline CSS styles for elements on a page',
         'url': 'http://inlinestyleprinter.azurewebsites.net/',
         'captionTitle': 'Inline Style Printer App'
 
+      },
+      {
+        'imgSrc': '../../images/portfolio_images/commandline_codepen.png',
+        'imgAlt': 'A screenshot for a codepen made by Steven Waters. It features a simulated command line prompt writen in HTML5,CSS3,and JavaScript',
+        'url': 'http://codepen.io/swaters86/full/XjBPdp/',
+        'captionTitle': 'CSS Desktop'
+
+      }, 
+      {
+        'imgSrc': '../../images/portfolio_images/letsawesome_codepen.png',
+        'imgAlt': 'A screenshot for a codepen made by Steven Waters. It features a site for creating a unity event',
+        'url': 'http://codepen.io/swaters86/full/aBNRKo/',
+        'captionTitle': 'Let\'s Awesome'
+      }, 
+      {
+        'imgSrc': '../../images/portfolio_images/psuedoselectorvisualizer_codepen.png',
+        'imgAlt': 'A screenshot for a codepen made by Steven Waters. It\'s a simple JavaScript site for demostrating CSS psuedo selectors',
+        'url': 'http://codepen.io/swaters86/full/jVgaKW/',
+        'captionTitle': 'Psuedo Selector Visualizer'
+      }
+    ], 
+    'portfolioOldItems': [
+      {
+        'imgSrc': '../../images/portfolio_images/NCS_Portal.png',
+        'imgAlt': 'A screenshot NEWSCYCLE Digital Salesforce Portal',
+        'url': 'NCS_Customer_Portal/index.html',
+        'captionTitle': 'NEWSCYCLE Digital Salesforce Portal',
       },
       {
         'imgSrc': '../../images/portfolio_images/Bespoke%26Co.png',
