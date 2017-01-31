@@ -96,6 +96,13 @@ router.get('/', function (req, res, next) {
     ], 
     'portfolioOldItems': [
       {
+        'imgSrc': '../../images/portfolio_images/NCS_Portal.png',
+        'imgAlt': 'A screenshot NEWSCYCLE Digital Salesforce Portal',
+        'url': 'NCS_Customer_Portal/index.html',
+        'captionTitle': 'NEWSCYCLE Digital Salesforce Portal',
+        'keywords': 'HTML5, CSS3, JavaScript, jQuery, Graphic Design'
+      },
+      {
         'imgSrc': '../../images/portfolio_images/Bespoke%26Co.png',
         'imgAlt': 'A screenshot of Bespoke & Co"s website from about 4 years ago',
         'url': 'http://bespokeandcofl.azurewebsites.net/',
@@ -120,15 +127,6 @@ router.get('/', function (req, res, next) {
         'captionTitle': 'Diabetic Charitable Services', 
         'keywords': 'HTML, CSS, JavaScript, Graphic Design'
       },
-      /*
-      {
-        'imgSrc': '../../images/portfolio_images/NCS_Portal.png',
-        'imgAlt': 'A screenshot NEWSCYCLE Digital Salesforce Portal',
-        'url': 'NCS_Customer_Portal/index.html',
-        'captionTitle': 'NEWSCYCLE Digital Salesforce Portal',
-        'keywords': 'HTML5, CSS3, JavaScript, jQuery, Graphic Design'
-      },
-      */
     ]
 
   }
