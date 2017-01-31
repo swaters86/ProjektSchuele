@@ -96,18 +96,11 @@ router.get('/', function (req, res, next) {
     ], 
     'portfolioOldItems': [
       {
-        'imgSrc': '../../images/portfolio_images/NCS_Portal.png',
-        'imgAlt': 'A screenshot NEWSCYCLE Digital Salesforce Portal',
-        'url': 'NCS_Customer_Portal/index.html',
-        'captionTitle': 'NEWSCYCLE Digital Salesforce Portal',
-        'keywords': 'HTML5, CSS3, JavaScript, jQuery, Graphic Design'
-      },
-      {
         'imgSrc': '../../images/portfolio_images/Bespoke%26Co.png',
         'imgAlt': 'A screenshot of Bespoke & Co"s website from about 4 years ago',
         'url': 'http://bespokeandcofl.azurewebsites.net/',
         'captionTitle': 'Bespoke & Co', 
-        'keywords': 'HTML, CSS, JavaScript, jQuery, Google Maps, ASP.net, VB.net, Graphic Design'
+        'keywords': 'HTML, CSS, JavaScript, jQuery, Google Maps, ASP.net, VB.net'
       }, {
         'imgSrc': '../../images/portfolio_images/WoodlandWonders.png',
         'imgAlt': 'Screenshot of WoodlandWonders.org - A non-profit organization for rehabilitating wildlife.',
@@ -126,7 +119,16 @@ router.get('/', function (req, res, next) {
         'url': 'http://diabeticservice.azurewebsites.net/',
         'captionTitle': 'Diabetic Charitable Services', 
         'keywords': 'HTML, CSS, JavaScript, Graphic Design'
-      }
+      },
+      /*
+      {
+        'imgSrc': '../../images/portfolio_images/NCS_Portal.png',
+        'imgAlt': 'A screenshot NEWSCYCLE Digital Salesforce Portal',
+        'url': 'NCS_Customer_Portal/index.html',
+        'captionTitle': 'NEWSCYCLE Digital Salesforce Portal',
+        'keywords': 'HTML5, CSS3, JavaScript, jQuery, Graphic Design'
+      },
+      */
     ]
 
   }
