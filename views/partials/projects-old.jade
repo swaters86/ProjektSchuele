@@ -10,7 +10,14 @@ div(class='container')
      div(class='panel-body')
       div(class='thumbnail')
        img(src='#{portfolioOldItem.imgSrc}',alt='#{portfolioOldItem.imgAlt}')
-     div(class="panel-heading")
+     div(class='panel-heading')
       h4(class='text-center')
-       a(href='#{portfolioOldItem.url}',title='visit site') #{portfolioOldItem.captionTitle}
+       if portfolioOldItem.url != undefined  
+        a(href='#{portfolioOldItem.url}',title='visit site') #{portfolioOldItem.captionTitle}
+       else 
+        span #{portfolioOldItem.captionTitle}
+     div(class='panel-body')
+      p
+       small  #{portfolioOldItem.keywords} 
+       
        

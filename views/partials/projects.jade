@@ -10,9 +10,17 @@ div(class='container')
      div(class='panel-body')
       div(class='thumbnail')
        img(src='#{portfolioItem.imgSrc}',alt='#{portfolioItem.imgAlt}')
-     div(class="panel-heading")
+     div(class='panel-heading')
       h4(class='text-center')
-       a(href='#{portfolioItem.url}',title='visit site') #{portfolioItem.captionTitle}
+       if portfolioItem.url != undefined  
+        a(href='#{portfolioItem.url}',title='visit site') #{portfolioItem.captionTitle}
+       else 
+        span #{portfolioItem.captionTitle}
+     div(class='panel-body')
+      p
+       small #{portfolioItem.keywords} 
+       
+       
        
  
           
